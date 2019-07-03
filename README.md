@@ -1,0 +1,2 @@
+# BaseAndroidProject
+record project.
