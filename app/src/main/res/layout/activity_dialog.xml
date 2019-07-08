@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.onekey.baseandroidproject.module.dialog.DialogActivity">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/tvDialogBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基本对话框"
+        android:onClick="onDialogClick"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/tvDialogBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基本对话框带按钮"
+        android:onClick="onDialogClick"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/tvDialogList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="列表对话框"
+        android:onClick="onDialogClick"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/tvDialogCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义对话框"
+        android:onClick="onDialogClick"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/tvDialogResID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义资源文件对话框"
+        android:onClick="onDialogClick"/>
+</android.support.v7.widget.LinearLayoutCompat>

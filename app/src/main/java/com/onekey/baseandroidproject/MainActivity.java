@@ -1,10 +1,12 @@
 package com.onekey.baseandroidproject;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.onekey.baseandroidproject.base.BaseActivity;
 import com.onekey.baseandroidproject.bean.DoubleAgeStudent;
 import com.onekey.baseandroidproject.bean.Student;
+import com.onekey.baseandroidproject.module.dialog.DialogActivity;
 import com.onekey.baseandroidproject.tools.GsonTool;
 
 public class MainActivity extends BaseActivity {
@@ -33,5 +35,13 @@ public class MainActivity extends BaseActivity {
         log(nullS);
         two = GsonTool.fromJson(nullS, Student.class);//若没添加DOUBLE_INT,此处会抛异常。
         log("" + two.getId().length() + two.getName().length() + two.getAge());//000
+    }
+
+    public void onBaseClick(View view) {
+        switch (view.getId()) {
+            case R.id.tvBaseToDialog:
+                toAct(DialogActivity.class);
+                break;
+        }
     }
 }
