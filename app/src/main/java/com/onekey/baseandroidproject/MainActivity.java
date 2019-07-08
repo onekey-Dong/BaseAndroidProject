@@ -3,6 +3,7 @@ package com.onekey.baseandroidproject;
 import android.os.Bundle;
 import android.view.View;
 
+import com.onekey.baseandroidproject.app.ExampleApp;
 import com.onekey.baseandroidproject.base.BaseActivity;
 import com.onekey.baseandroidproject.bean.DoubleAgeStudent;
 import com.onekey.baseandroidproject.bean.Student;
@@ -40,7 +41,7 @@ public class MainActivity extends BaseActivity {
     public void onBaseClick(View view) {
         switch (view.getId()) {
             case R.id.tvBaseToDialog:
-                toAct(DialogActivity.class);
+                toSingleAct(ExampleApp.instance(), DialogActivity.class);
                 break;
         }
     }

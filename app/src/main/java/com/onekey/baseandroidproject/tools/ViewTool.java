@@ -8,7 +8,8 @@ import android.view.View;
 
 public class ViewTool {
 
-    private ViewTool() {}
+    private ViewTool() {
+    }
 
     public static void hideView(View view) {
         if (view == null || View.GONE == view.getVisibility()) return;

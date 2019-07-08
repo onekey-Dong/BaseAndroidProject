@@ -21,7 +21,7 @@ public class DialogActivity extends BaseActivity {
 
     @Override
     protected void initView(Bundle bundle) {
-
+        log(TAG + " is created.");
     }
 
     public void onDialogClick(View view) {

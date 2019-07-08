@@ -1,6 +1,7 @@
 package com.onekey.baseandroidproject.base;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -30,6 +31,12 @@ public abstract class BaseActivity extends AppCompatActivity {
     public void toAct(Class<? extends Activity> cls) {
         Intent intent = new Intent(this, cls);
         startActivity(intent);
+    }
+
+    protected void toSingleAct(Context context, Class<? extends Activity> cls) {
+        Intent intent = new Intent(this, cls);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
     }
 
     public void log(String msg) {

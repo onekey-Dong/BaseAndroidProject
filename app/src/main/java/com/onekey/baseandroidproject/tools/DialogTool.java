@@ -12,7 +12,8 @@ import com.onekey.baseandroidproject.R;
 
 public class DialogTool {
 
-    private DialogTool() {}
+    private DialogTool() {
+    }
 
     public static void show(Context context, String content) {
         new MaterialDialog.Builder(context)
@@ -66,7 +67,7 @@ public class DialogTool {
     }
 
     public static void show(Context context, String title, String positiveText,
-                                              MaterialDialog.SingleButtonCallback callback, View contentView, boolean isWrap) {
+                            MaterialDialog.SingleButtonCallback callback, View contentView, boolean isWrap) {
         new MaterialDialog.Builder(context)
                 .title(title)
                 .positiveText(positiveText)
